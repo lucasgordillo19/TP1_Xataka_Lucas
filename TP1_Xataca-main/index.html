@@ -6,6 +6,8 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <meta name="description" content="Xataca Tech Fest" />
       <link rel="stylesheet" href="estilos.css" />
+
+      <meta name="viewport" content="width=device-width,initial-scale=1"/>
     </head>
     <body>
       <header class="portada">
@@ -21,8 +23,9 @@
           </ul>
         </nav>
 
-        <div class="título_fondo">
-          <h1>XATAKA TECH FEST ARGENTINA 2026</h1>
+                <div class="título_fondo">
+          <h1>XATAKA</h1>
+          <h3>TECH FEST ARGENTINA 2026</h3>
 
           <h2>
             Gadgets, innovación y futuro, toda la comunidad tech reunida en este
@@ -42,10 +45,10 @@
                 <h2>SEP 30 - OCT 02</h2>
               </div>
 
-            </div>  
+            </div>
 
-            <div>
-              <button class="boton"><h2>COMPRAR ENTRADA</h2></button>
+                        <div>
+              <button class="boton" id="boton"><h2>COMPRAR ENTRADA</h2></button>
             </div>
 
         </div>
@@ -54,8 +57,8 @@
       <!-- Inicia la sección de lo que podemos encontrar. -->
       <section>
         <div>
-          <div class="fondo_negro titulitos">
-            <h2>¿Qué vas a encontrar?</h2>
+          <div class="fondo_negro_titulitos">
+            <h2 id="Merch">¿Qué vas a encontrar?</h2>
           </div>
 
           <div class="fondo_portada">
@@ -77,7 +80,7 @@
       <!-- Inicia la sección de invitados. -->
       <section>
         <div>
-          <div class="fondo_negro titulitos">
+          <div class="fondo_negro_titulitos">
             <h2 id="Invitados">
               Invitados
             </h2>
@@ -126,7 +129,7 @@
       <!-- Inicia la sección de experiencias. -->
       <section>
         <div>
-          <div class="fondo_negro titulitos">
+          <div class="fondo_negro_titulitos">
             <h2 id="Experimentá">Experiencias</h2>
           </div>
           <h3>Viví la tecnología en primera persona</h3>
@@ -147,8 +150,8 @@
         </div>
       </section>
 
-      <div class="fondo_negro titulitos">
-            <h2 id="Invitados">
+         <div class="fondo_negro_titulitos">
+            <h2>
               En resumen:
             </h2>
           </div>
@@ -216,14 +219,17 @@
         </div>
       </section>
 
-      <div class="div_botonbajo">
+             <div class="div_botonbajo">
         <h3>¿Estás listo para una experiencia inolvidable?</h3>
-        <button class="boton"  style="width: 500px; height: 100px;"><h2>COMPRAR ENTRADA</h2></button>
+        <button class="boton" id="boton"><h2>COMPRAR ENTRADA</h2></button>
       </div>
 
+       <div class="modal" id="modal">
+
+        <span class="cerrao">&times;</span>
 
           <form id="form">
-            <h2>Registrá tus datos para comprar tu entrada</h2>
+          <h2>Registrá tus datos para comprar tu entrada</h2>
           <label for="Nombre">Nombre</label>
           <input
             type="text"
@@ -281,26 +287,27 @@
         </form>
 
         <input type="submit" id="boton-enviar" value="Enviar" />
-
         <input type="reset" id="boton-borrar" value="Borrar" />
-      </section>
 
-      <!-- Falta edad, cantidad de entradas, arreglar lo del teléfono y no sé qué más. -->
-
-           <script src="./papasfritas.js"></script>
-
-      <section class="mensajito escondidito" id="mensajito">
+              <div class="mensajito escondidito" id="mensajito">
         <p>
           Gracias <span id="Nombre-placeholder">Nombre</span>
           <span id="Apellido-placeholder">Apellido</span>, por dejar tus datos
           bancarios a <span id="email-placeholder">correo</span>:DDD
         </p>
+      </div>
+
+        </div>
       </section>
-      <footer>
+
+      <!-- Falta edad, cantidad de entradas, arreglar lo del teléfono y no sé qué más. -->
+
+           <script src="./papasfritas.js"></script>
+     <footer>
         <p>SEGUINOS EN NUESTRAS REDES SOCIALES PARA ESTAR AL DÍA:</p>
         <div>
-          <a href="https://www.xataka.com/"><img src="./Imágenes/xatala_logo.png" alt="" class="img-uniforme"></a>
-          <a href=""><img src="./Imágenes/instagram.png" alt="" class="img-uniforme"></a>
+          <a href="https://www.xataka.com/"><img src="./Imágenes/xatala_logo.png" alt="" class="img-uniformeuno"></a>
+          <a href=""><img src="./Imágenes/instagram.png" alt="" class="img-uniformedos"></a>
 
         </div>
         <p>&copy; Xataka 2026. Todos los derechos reservados.</p>
